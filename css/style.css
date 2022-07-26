@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&display=swap');
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -12,41 +13,46 @@
 
 .logoalaia{
     border-radius: 200px;
-}
-
-header{
-padding: 20px;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-body header nav h1{
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-}
-
-
-header nav ul li{
-    justify-content: center;
-    display: inline-block;
-    margin: 20px;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    margin: 20px;
-}
-
-
-header img{
     width: 150px;
     height: 150px;
 }
 
 header{
-    background-color: burlywood;
+background-color: burlywood;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
 }
+
+.menunav{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.menunav a{
+    transition: all 0.3s ease 0s;
+}
+
+.menunav a:hover{
+color: yellow;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: violet;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
 
 body h1{
     text-align: center;
@@ -91,14 +97,14 @@ body h1{
     border-radius: 25% 10%;
 }
 /*-----------mediaquarie de la primer galeria---------*/
-@media screen and (min-width:700px){
+@media screen and (min-width:320px){
     .fotosgal{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 200px 200px 200px;
     }
     }
     
-    @media screen and (min-width:800px){
+    @media screen and (min-width:600px){
         .fotosgal{
             grid-template-columns: 2fr 2fr 2fr;
             grid-template-rows: 300px 300px 300px;
@@ -107,7 +113,7 @@ body h1{
     
     
     
-    @media screen and (min-width:900px){
+    @media screen and (min-width:800px){
         .fotosgal{
             grid-template-columns: 3fr 3fr 3fr;
             grid-template-rows: 500px 500px 500px;
@@ -161,14 +167,14 @@ main{
 }
 
 /*-----------mediaquarie de la segunda galeria---------*/
-@media screen and (min-width:700px){
+@media screen and (min-width:320px){
     .card{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 200px 200px 200px;
     }
 }
     
-    @media screen and (min-width:800px){
+    @media screen and (min-width:600px){
         .card{
             grid-template-columns: 2fr 2fr 2fr;
             grid-template-rows: 300px 300px 300px;
@@ -177,7 +183,7 @@ main{
     
     
     
-    @media screen and (min-width:900px){
+    @media screen and (min-width:800px){
         .card{
             grid-template-columns: 3fr 3fr 3fr;
             grid-template-rows: 500px 500px 500px;
