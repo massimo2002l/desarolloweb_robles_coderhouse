@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*--------------------------------------headers----------------------------------------------------*/
+
+
+
+.logoalaia{
+    border-radius: 200px;
+}
+
+header{
+padding: 20px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+body header nav h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+
+header nav ul li{
+    justify-content: center;
+    display: inline-block;
+    margin: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin: 20px;
+}
+
+
+header img{
+    width: 150px;
+    height: 150px;
+}
+
+header{
+    background-color: burlywood;
+}
+
+body h1{
+    text-align: center;
+}
+
+/* --------------------------------------------mains--------------------------------------------------*/
+.menu h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+.menu h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+
+.fotosgal{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-flow: 100px;
+    gap: 5px;
+    position:sticky;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;   
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.fotosgal img{
+    width: 80%;
+    height: 80%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);  
+    border-radius: 25% 10%;
+}
+/*-----------mediaquarie de la primer galeria---------*/
+@media screen and (min-width:700px){
+    .fotosgal{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+    }
+    }
+    
+    @media screen and (min-width:800px){
+        .fotosgal{
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 300px 300px 300px;
+        }
+        }
+    
+    
+    
+    @media screen and (min-width:900px){
+        .fotosgal{
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 500px 500px 500px;
+        }
+        }   
+/*----------------------------------*/
+
+.map p{
+    font-family: 'Bebas Neue', cursive;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/bakery.jpg);
+    background-size: cover;
+    background-position:  center;
+    background-attachment: fixed;
+}
+
+.card{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-flow: 100px;
+    gap: 5px;
+    position:sticky;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;   
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.card h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;   
+    margin: 10px;
+}
+
+.card img{
+    width: 80%;
+    height: 80%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);  
+    border-radius: 25% 10%;
+}
+
+/*-----------mediaquarie de la segunda galeria---------*/
+@media screen and (min-width:700px){
+    .card{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+    
+    @media screen and (min-width:800px){
+        .card{
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 300px 300px 300px;
+        }
+        }
+    
+    
+    
+    @media screen and (min-width:900px){
+        .card{
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 500px 500px 500px;
+        }
+        }
+/*---------------------------------------------------*/
+.known h2{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.known p{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.chefs h3{
+    color: white;
+}
+
+.abouts h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.abouts h2{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    color: white
+}
+
+.requerimentos h2{
+    font-family: 'Bebas Neue', cursive;
+    color: white;}
+
+.requerimentos ul li{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.map h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.map p{
+    
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.infoceliaca h2{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.infoceliaca p{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.infoceliaca img{
+    border-radius: 150px;
+    border: 2px;
+    margin: 10px;
+}
+
+
+/*-------------------------------------------------------footers--------------------------------------*/
+
+footer{
+    background-color: burlywood;
+} 
+
+.insta a img{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.insta h3{
+    font-family: 'Bebas Neue', cursive;
+}
