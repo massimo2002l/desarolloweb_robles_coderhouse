@@ -59,21 +59,29 @@ body h1{
 }
 
 /* --------------------------------------------mains--------------------------------------------------*/
-.menu h2{
-    display: flex;
-    justify-content: center;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+
+
+.carousel-inner > .carousel-item > img {
+    width: px;
+    margin: auto;
 }
-.menu h3{
-    display: flex;
-    justify-content: center;
-    font-family: 'Dancing Script', cursive;
+
+.card-columns {
+    column-count: 3;
+}
+
+.card.card-body{
+    background-color: #9298E5;
+}
+
+.lead{
     color: white;
 }
 
-
-.fotosgal{
+.text-primary{
+    color: white;
+}
+/*.fotosgal{
     width: 100%;
     margin-top: 50px;
     display: grid;
@@ -86,16 +94,16 @@ body h1{
     text-decoration: none;   
     margin: 10px;
     box-sizing: border-box;
-}
+}*/
 
-.fotosgal img{
+/* .fotosgal img{
     width: 80%;
     height: 80%;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);  
     border-radius: 25% 10%;
-}
+} */
 /*-----------mediaquarie de la primer galeria---------*/
 @media screen and (min-width:320px){
     .fotosgal{
@@ -210,14 +218,14 @@ main{
     font-style: italic;
     font-family: 'Bebas Neue', cursive;
     color: white;
-}
+} 
 
 .abouts h2{
     font-family: 'Dancing Script', cursive;
     display: flex;
     justify-content: center;
     color: white
-}
+} 
 
 .requerimentos h2{
     font-family: 'Bebas Neue', cursive;
