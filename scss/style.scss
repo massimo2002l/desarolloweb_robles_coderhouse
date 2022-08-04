@@ -1,0 +1,235 @@
+@import "./base/generales";
+@import "./base/variables";
+@import "./components/footer";
+@import "./components/header";
+
+
+/*--------------------------------------headers----------------------------------------------------*/
+body {
+    h1 {
+        text-align: center;
+    }
+}
+
+/* --------------------------------------------mains--------------------------------------------------*/
+
+.carousel,
+.slide,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img,
+.carousel .carousel-control {
+    border-radius: 150px;
+    overflow: hidden;
+}
+
+.carousel-inner>.carousel-item>img {
+    margin: auto;
+
+    .w-100 {
+        width: 50% !important;
+        height: 90% !important;
+    }
+}
+
+.card.card-body {
+    background-color: $color-bluely;
+}
+
+.lead {
+    color: white;
+}
+
+.text-primary {
+    color: white;
+}
+
+.text-center {
+    color: $color-bluely;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.map p {
+    font-family: 'Bebas Neue', cursive;
+}
+
+main {
+    width: 100%;
+    background-image: url(../img/bakery.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.known h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.known p {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.chefs h3 {
+    color: white;
+}
+
+.abouts h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.abouts h2 {
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    color: white
+}
+
+.requerimentos h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.requerimentos ul li {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.map h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.map p {
+
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.infoceliaca h2 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.infoceliaca p {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.infoceliaca img {
+    border-radius: 150px;
+    border: 2px;
+    margin: 10px;
+}
+
+
+/*-------------------------------------------------------footers--------------------------------------*/
+.insta {
+    a {
+        img {
+            margin: 10px;
+            width: 60px;
+            height: 60px;
+
+            h3 {
+                font-family: 'Bebas Neue', cursive;
+            }
+        }
+    }
+}
+
+/*--------------------- Media Queries ----------------*/
+
+@media only screen and (max-width: 575px) {
+    .card-columns {
+        column-count: 1;
+        margin-left: 0.5rem;
+    }
+
+
+    .row>* {
+        width: 95%;
+    }
+
+    .insta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero {
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .card-columns {
+        column-count: 1;
+    }
+
+    .row>* {
+        width: 95%;
+    }
+
+    .insta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .hero h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem
+    }
+
+}
+
+/*--------------------- Animaciones ----------------*/
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: yellow !important;
+    transition: all 0.3s ease 0s;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.card.card-body:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.abouts h1:hover {
+    text-decoration: overline;
+}
