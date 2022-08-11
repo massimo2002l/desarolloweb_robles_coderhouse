@@ -1,0 +1,7 @@
+// * mixin
+
+@mixin flex-test ($flex, $justify, $allign){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $allign;
+}

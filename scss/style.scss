@@ -1,7 +1,11 @@
 @import "./base/generales";
 @import "./base/variables";
+@import "./base/mixin";
+@import "./base/extend";
+@import "./base/maps";
 @import "./components/footer";
 @import "./components/header";
+
 
 
 /*--------------------------------------headers----------------------------------------------------*/
@@ -25,12 +29,8 @@ body {
 
 .carousel-inner>.carousel-item>img {
     margin: auto;
+    width: 50% !important;}
 
-    .w-100 {
-        width: 50% !important;
-        height: 90% !important;
-    }
-}
 
 .card.card-body {
     background-color: $color-bluely;
@@ -57,9 +57,10 @@ body {
 main {
     width: 100%;
     background-image: url(../img/bakery.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-size: map-get($main, b-size );
+    background-position: map-get($main, b-position );
+    background-attachment: map-get($main, b-gattach );
+    border-color: map-get($main, b-color )
 }
 
 .known h2 {
@@ -77,8 +78,7 @@ main {
 }
 
 .abouts h1 {
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     font-size: 50px;
     font-style: italic;
     font-family: 'Bebas Neue', cursive;
@@ -87,8 +87,7 @@ main {
 
 .abouts h2 {
     font-family: 'Dancing Script', cursive;
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     color: white
 }
 
@@ -108,7 +107,6 @@ main {
 }
 
 .map p {
-
     color: white;
     font-family: 'Dancing Script', cursive;
 }
@@ -159,16 +157,12 @@ main {
     }
 
     .insta {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-test (flex, center, center);
     }
 
     .hero {
         h2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-test (flex, center, center);
         }
     }
 }
@@ -183,18 +177,14 @@ main {
     }
 
     .insta {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-test (flex, center, center);
         margin-left: 3rem;
         margin-right: 3rem;
     }
 
     .hero h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 1rem
+        @include flex-test (flex, center, center);
+        margin-left: 1rem;
     }
 
 }

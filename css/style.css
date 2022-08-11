@@ -6,6 +6,11 @@
   padding: 0;
   text-decoration: none; }
 
+.abouts h1, .abouts h2 {
+  display: flex;
+  justify-content: center; }
+
+/*map*/
 footer {
   background-color: burlywood; }
 
@@ -31,10 +36,8 @@ body h1 {
   overflow: hidden; }
 
 .carousel-inner > .carousel-item > img {
-  margin: auto; }
-  .carousel-inner > .carousel-item > img .w-100 {
-    width: 50% !important;
-    height: 90% !important; }
+  margin: auto;
+  width: 50% !important; }
 
 .card.card-body {
   background-color: #9298E5; }
@@ -58,7 +61,8 @@ main {
   background-image: url(../img/bakery.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  border-color: antiquewhite; }
 
 .known h2 {
   font-family: 'Bebas Neue', cursive;
@@ -72,8 +76,6 @@ main {
   color: white; }
 
 .abouts h1 {
-  display: flex;
-  justify-content: center;
   font-size: 50px;
   font-style: italic;
   font-family: 'Bebas Neue', cursive;
@@ -81,8 +83,6 @@ main {
 
 .abouts h2 {
   font-family: 'Dancing Script', cursive;
-  display: flex;
-  justify-content: center;
   color: white; }
 
 .requerimentos h2 {
@@ -131,12 +131,12 @@ main {
     width: 95%; }
   .insta {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .hero h2 {
     display: flex;
-    align-items: center;
-    justify-content: center; } }
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (max-width: 320px) {
   .card-columns {
@@ -145,14 +145,14 @@ main {
     width: 95%; }
   .insta {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-left: 3rem;
     margin-right: 3rem; }
   .hero h2 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-left: 1rem; } }
 
 /*--------------------- Animaciones ----------------*/
