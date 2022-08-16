@@ -9,7 +9,10 @@
 
 
 /*--------------------------------------headers----------------------------------------------------*/
+
 body {
+    background-color: burlywood;
+
     h1 {
         text-align: center;
     }
@@ -29,7 +32,9 @@ body {
 
 .carousel-inner>.carousel-item>img {
     margin: auto;
-    width: 50% !important;}
+    width: 50% !important;
+    padding: 30px;
+}
 
 
 .card.card-body {
@@ -50,81 +55,96 @@ body {
     font-style: italic;
 }
 
-.map p {
-    font-family: 'Bebas Neue', cursive;
+
+.infoceliaca {
+    h2 {
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+    }
+    p {
+        margin-left: 35px;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    img {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 65% !important;
+        padding: 30px;
+        overflow: hidden;
+        border: 2px;
+        border-radius: 100px;
+    }
 }
+
 
 main {
     width: 100%;
     background-image: url(../img/bakery.jpg);
-    background-size: map-get($main, b-size );
-    background-position: map-get($main, b-position );
-    background-attachment: map-get($main, b-gattach );
-    border-color: map-get($main, b-color )
+    background-size: map-get($main, b-size);
+    background-position: map-get($main, b-position);
+    background-attachment: map-get($main, b-gattach);
+    border-color: map-get($main, b-color)
 }
 
-.known h2 {
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-}
+.known {
+    h2 {
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+    }
 
-.known p {
-    font-family: 'Dancing Script', cursive;
-    color: white;
+    p {
+        color: white;
+    }
 }
 
 .chefs h3 {
     color: white;
 }
 
-.abouts h1 {
-    @extend %flex;
-    font-size: 50px;
-    font-style: italic;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+.abouts {
+    h1 {
+        @extend %flex;
+        font-size: 50px;
+        font-style: italic;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+    }
+
+    h2 {
+        @extend %flex;
+        color: white
+    }
 }
 
-.abouts h2 {
-    font-family: 'Dancing Script', cursive;
-    @extend %flex;
-    color: white
+.requerimentos {
+    h2 {
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+    }
+
+    ul li {
+        color: white;
+    }
 }
 
-.requerimentos h2 {
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-}
 
-.requerimentos ul li {
-    color: white;
-    font-family: 'Dancing Script', cursive;
-}
+.map {
+    h2 {
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+    }
 
-.map h2 {
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.map p {
-    color: white;
-    font-family: 'Dancing Script', cursive;
-}
-
-.infoceliaca h2 {
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.infoceliaca p {
-    color: white;
-    font-family: 'Dancing Script', cursive;
-}
-
-.infoceliaca img {
-    border-radius: 150px;
-    border: 2px;
-    margin: 10px;
+    p {
+        color: white;
+    }
 }
 
 

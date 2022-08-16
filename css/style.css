@@ -22,8 +22,10 @@ header {
   align-items: center; }
 
 /*--------------------------------------headers----------------------------------------------------*/
-body h1 {
-  text-align: center; }
+body {
+  background-color: burlywood; }
+  body h1 {
+    text-align: center; }
 
 /* --------------------------------------------mains--------------------------------------------------*/
 .carousel,
@@ -37,7 +39,8 @@ body h1 {
 
 .carousel-inner > .carousel-item > img {
   margin: auto;
-  width: 50% !important; }
+  width: 50% !important;
+  padding: 30px; }
 
 .card.card-body {
   background-color: #9298E5; }
@@ -53,8 +56,30 @@ body h1 {
   font-weight: bold;
   font-style: italic; }
 
-.map p {
-  font-family: 'Bebas Neue', cursive; }
+.infoceliaca h2 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  padding: 25px; }
+
+.infoceliaca p {
+  margin-left: 35px;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  color: white; }
+
+.infoceliaca img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 65% !important;
+  padding: 30px;
+  overflow: hidden;
+  border: 2px;
+  border-radius: 100px; }
 
 main {
   width: 100%;
@@ -69,7 +94,6 @@ main {
   color: white; }
 
 .known p {
-  font-family: 'Dancing Script', cursive;
   color: white; }
 
 .chefs h3 {
@@ -82,7 +106,6 @@ main {
   color: white; }
 
 .abouts h2 {
-  font-family: 'Dancing Script', cursive;
   color: white; }
 
 .requerimentos h2 {
@@ -90,29 +113,14 @@ main {
   color: white; }
 
 .requerimentos ul li {
-  color: white;
-  font-family: 'Dancing Script', cursive; }
+  color: white; }
 
 .map h2 {
   color: white;
   font-family: 'Bebas Neue', cursive; }
 
 .map p {
-  color: white;
-  font-family: 'Dancing Script', cursive; }
-
-.infoceliaca h2 {
-  color: white;
-  font-family: 'Bebas Neue', cursive; }
-
-.infoceliaca p {
-  color: white;
-  font-family: 'Dancing Script', cursive; }
-
-.infoceliaca img {
-  border-radius: 150px;
-  border: 2px;
-  margin: 10px; }
+  color: white; }
 
 /*-------------------------------------------------------footers--------------------------------------*/
 .insta a img {
