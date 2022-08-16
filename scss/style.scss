@@ -32,8 +32,9 @@ body {
 
 .carousel-inner>.carousel-item>img {
     margin: auto;
-    width: 50% !important;
-    padding: 30px;
+    width: 40% !important;
+    padding: 25px;
+    margin-bottom: 85px;
 }
 
 
@@ -45,6 +46,18 @@ body {
     color: white;
 }
 
+.comunication{
+    label{display: inline-block;
+    color: white;}
+    textarea{
+        resize: vertical;
+        margin-bottom: 170px;
+    } p{
+        color: white;} h5{color: white;}
+    } 
+
+
+
 .text-primary {
     color: white;
 }
@@ -55,26 +68,40 @@ body {
     font-style: italic;
 }
 
+.abouts {
+    h1 {
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        @extend %flex;
+        padding: 20px;
+    }
+
+    h2 {
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        @extend %flex;       
+    }
+}
+
 
 .infoceliaca {
     h2 {
         color: white;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
-        display: flex;
-        justify-content: center;
+        @extend %flex;
         padding: 25px;
     }
     p {
-        margin-left: 35px;
+        margin: 20px;
         font-style: italic;
-        display: flex;
-        justify-content: center;
+        @extend %flex;
         color: white;
     }
     img {
-        display: flex;
-        justify-content: center;
+        @extend %flex;
         margin: auto;
         width: 65% !important;
         padding: 30px;
@@ -86,7 +113,7 @@ body {
 
 
 main {
-    width: 100%;
+    
     background-image: url(../img/bakery.jpg);
     background-size: map-get($main, b-size);
     background-position: map-get($main, b-position);
@@ -96,11 +123,18 @@ main {
 
 .known {
     h2 {
-        font-family: 'Bebas Neue', cursive;
         color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
     }
 
     p {
+        margin: 20px;
+        font-style: italic;
+        @extend %flex;
         color: white;
     }
 }
@@ -109,44 +143,46 @@ main {
     color: white;
 }
 
-.abouts {
-    h1 {
-        @extend %flex;
-        font-size: 50px;
-        font-style: italic;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-    }
-
-    h2 {
-        @extend %flex;
-        color: white
-    }
-}
-
-.requerimentos {
-    h2 {
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-    }
-
-    ul li {
-        color: white;
-    }
-}
-
-
 .map {
     h2 {
         color: white;
         font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        @extend %flex;
+        padding: 25px;
     }
 
     p {
+        margin: 20px;
+        font-style: italic;
+        @extend %flex;
         color: white;
-    }
+    } 
+    iframe {@extend %flex;
+        margin: auto;
+        width: 70% !important;
+        padding: 5px;
+        overflow: hidden;
+        border: 2px;
+        border-radius: 10px;}
 }
 
+.requerimentos {
+    h2 {
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-style: italic;
+        @extend %flex;
+        padding: 25px;
+        margin: auto;
+
+    }
+
+    ul li {
+        color: white;
+        @extend %flex;
+    }
+}
 
 /*-------------------------------------------------------footers--------------------------------------*/
 .insta {
@@ -171,6 +207,8 @@ main {
         margin-left: 0.5rem;
     }
 
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 0;}
 
     .row>* {
         width: 95%;
@@ -185,9 +223,29 @@ main {
             @include flex-test (flex, center, center);
         }
     }
+
+    .carousel-inner > .carousel-item > img {
+        margin: auto;
+        width: 90% !important;
+        padding: 33px;
 }
 
-@media only screen and (max-width: 320px) {
+.carousel, .slide, .carousel .carousel-inner, .carousel .carousel-item, .carousel .carousel-item img, .carousel .carousel-control {
+    border-radius: 150px;
+    overflow: hidden;
+    margin-bottom: 52px;
+}
+}
+
+@media only screen and (max-width: 820px) {
+    .carousel-inner > .carousel-item > img {
+        margin: auto;
+        width: 90% !important;
+        padding: 33px;
+        margin-bottom: 510px;
+}
+
+@media only screen and (-width: 320px) {
     .card-columns {
         column-count: 1;
     }
@@ -195,6 +253,10 @@ main {
     .row>* {
         width: 95%;
     }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 0;}
+
 
     .insta {
         @include flex-test (flex, center, center);
@@ -208,11 +270,27 @@ main {
     }
 
 }
+.carousel-inner > .carousel-item > img {
+    margin: auto;
+    width: 90% !important;
+    padding: 35px;      
+}
 
+.carousel, .slide, .carousel .carousel-inner, .carousel .carousel-item, .carousel .carousel-item img, .carousel .carousel-control {
+    border-radius: 150px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
 /*--------------------- Animaciones ----------------*/
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: yellow !important;
+    transition: all 0.3s ease 0s;
+    animation: shake 0.5s;
+}
+
+.map h2:hover {
+    color: violet !important;
     transition: all 0.3s ease 0s;
     animation: shake 0.5s;
 }
@@ -242,4 +320,6 @@ main {
 
 .abouts h1:hover {
     text-decoration: overline;
+}
+
 }
