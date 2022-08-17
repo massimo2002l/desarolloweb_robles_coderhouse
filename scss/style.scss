@@ -46,15 +46,25 @@ body {
     color: white;
 }
 
-.comunication{
-    label{display: inline-block;
-    color: white;}
-    textarea{
+.comunication {
+    label {
+        display: inline-block;
+        color: white;
+    }
+
+    textarea {
         resize: vertical;
         margin-bottom: 170px;
-    } p{
-        color: white;} h5{color: white;}
-    } 
+    }
+
+    p {
+        color: white;
+    }
+
+    h5 {
+        color: white;
+    }
+}
 
 
 
@@ -81,7 +91,7 @@ body {
         color: white;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
-        @extend %flex;       
+        @extend %flex;
     }
 }
 
@@ -94,12 +104,14 @@ body {
         @extend %flex;
         padding: 25px;
     }
+
     p {
         margin: 20px;
         font-style: italic;
         @extend %flex;
         color: white;
     }
+
     img {
         @extend %flex;
         margin: auto;
@@ -113,7 +125,7 @@ body {
 
 
 main {
-    
+
     background-image: url(../img/bakery.jpg);
     background-size: map-get($main, b-size);
     background-position: map-get($main, b-position);
@@ -157,14 +169,17 @@ main {
         font-style: italic;
         @extend %flex;
         color: white;
-    } 
-    iframe {@extend %flex;
+    }
+
+    iframe {
+        @extend %flex;
         margin: auto;
         width: 70% !important;
         padding: 5px;
         overflow: hidden;
         border: 2px;
-        border-radius: 10px;}
+        border-radius: 10px;
+    }
 }
 
 .requerimentos {
@@ -207,8 +222,10 @@ main {
         margin-left: 0.5rem;
     }
 
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        width: 0;}
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 0;
+    }
 
     .row>* {
         width: 95%;
@@ -224,114 +241,128 @@ main {
         }
     }
 
-    .carousel-inner > .carousel-item > img {
+    .carousel-inner>.carousel-item>img {
         margin: auto;
         width: 90% !important;
         padding: 33px;
-}
+    }
 
-.carousel, .slide, .carousel .carousel-inner, .carousel .carousel-item, .carousel .carousel-item img, .carousel .carousel-control {
-    border-radius: 150px;
-    overflow: hidden;
-    margin-bottom: 52px;
-}
+    .carousel,
+    .slide,
+    .carousel .carousel-inner,
+    .carousel .carousel-item,
+    .carousel .carousel-item img,
+    .carousel .carousel-control {
+        border-radius: 150px;
+        overflow: hidden;
+        margin-bottom: 52px;
+    }
 }
 
 @media only screen and (max-width: 820px) {
-    .carousel-inner > .carousel-item > img {
+    .carousel-inner>.carousel-item>img {
         margin: auto;
         width: 90% !important;
         padding: 33px;
         margin-bottom: 510px;
-}
-
-@media only screen and (-width: 320px) {
-    .card-columns {
-        column-count: 1;
     }
 
-    .row>* {
-        width: 95%;
+    @media only screen and (-width: 320px) {
+        .card-columns {
+            column-count: 1;
+        }
+
+        .row>* {
+            width: 95%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 0;
+        }
+
+
+        .insta {
+            @include flex-test (flex, center, center);
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+
+        .hero h2 {
+            @include flex-test (flex, center, center);
+            margin-left: 1rem;
+        }
+
     }
 
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        width: 0;}
-
-
-    .insta {
-        @include flex-test (flex, center, center);
-        margin-left: 3rem;
-        margin-right: 3rem;
+    .carousel-inner>.carousel-item>img {
+        margin: auto;
+        width: 90% !important;
+        padding: 35px;
     }
 
-    .hero h2 {
-        @include flex-test (flex, center, center);
-        margin-left: 1rem;
+    .carousel,
+    .slide,
+    .carousel .carousel-inner,
+    .carousel .carousel-item,
+    .carousel .carousel-item img,
+    .carousel .carousel-control {
+        border-radius: 150px;
+        overflow: hidden;
+        margin-bottom: 70px;
     }
 
-}
-.carousel-inner > .carousel-item > img {
-    margin: auto;
-    width: 90% !important;
-    padding: 35px;      
-}
+    /*--------------------- Animaciones ----------------*/
 
-.carousel, .slide, .carousel .carousel-inner, .carousel .carousel-item, .carousel .carousel-item img, .carousel .carousel-control {
-    border-radius: 150px;
-    overflow: hidden;
-    margin-bottom: 70px;
-}
-/*--------------------- Animaciones ----------------*/
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: yellow !important;
-    transition: all 0.3s ease 0s;
-    animation: shake 0.5s;
-}
-
-.map h2:hover {
-    color: violet !important;
-    transition: all 0.3s ease 0s;
-    animation: shake 0.5s;
-}
-
-.requerimentos h2:hover {
-    color: violet !important;
-    transition: all 0.3s ease 0s;
-    animation: shake 0.5s;
-}
-
-.known h2:hover {
-    color: violet !important;
-    transition: all 0.3s ease 0s;
-    animation: shake 0.5s;
-}
-
-@keyframes shake {
-    0% {
-        transform: translateY(0)
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: yellow !important;
+        transition: all 0.3s ease 0s;
+        animation: shake 0.5s;
     }
 
-    25% {
-        transform: translateY(5px);
+    .map h2:hover {
+        color: violet !important;
+        transition: all 0.3s ease 0s;
+        animation: shake 0.5s;
     }
 
-    50% {
-        transform: translateY(-5px);
+    .requerimentos h2:hover {
+        color: violet !important;
+        transition: all 0.3s ease 0s;
+        animation: shake 0.5s;
     }
 
-    100% {
-        transform: translateY(0px);
+    .known h2:hover {
+        color: violet !important;
+        transition: all 0.3s ease 0s;
+        animation: shake 0.5s;
     }
-}
 
-.card.card-body:hover {
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-}
+    @keyframes shake {
+        0% {
+            transform: translateY(0)
+        }
 
-.abouts h1:hover {
-    text-decoration: overline;
-}
+        25% {
+            transform: translateY(5px);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .card.card-body:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+    }
+
+    .abouts h1:hover {
+        text-decoration: overline;
+    }
 
 }
