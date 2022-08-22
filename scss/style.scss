@@ -313,56 +313,106 @@ main {
     }
 }
 
-    /*--------------------- Animaciones ----------------*/
+/*--------------------- Animaciones ----------------*/
 
-    .navbar-light .navbar-nav .nav-link:hover {
-        color: yellow !important;
-        transition: all 0.3s ease 0s;
-        animation: shake 0.5s;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: yellow !important;
+    transition: all 0.3s ease 0s;
+    animation: shake 0.5s;
+}
+
+.map h2:hover {
+    color: violet !important;
+    transition: all 0.3s ease 0s;
+    animation: shake 0.5s;
+}
+
+.requerimentos h2:hover {
+    color: violet !important;
+    transition: all 0.3s ease 0s;
+    animation: shake 0.5s;
+}
+
+.known h2:hover {
+    color: violet !important;
+    transition: all 0.3s ease 0s;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0)
     }
 
-    .map h2:hover {
-        color: violet !important;
-        transition: all 0.3s ease 0s;
-        animation: shake 0.5s;
+    25% {
+        transform: translateY(5px);
     }
 
-    .requerimentos h2:hover {
-        color: violet !important;
-        transition: all 0.3s ease 0s;
-        animation: shake 0.5s;
+    50% {
+        transform: translateY(-5px);
     }
 
-    .known h2:hover {
-        color: violet !important;
-        transition: all 0.3s ease 0s;
-        animation: shake 0.5s;
+    100% {
+        transform: translateY(0px);
     }
+}
 
-    @keyframes shake {
-        0% {
-            transform: translateY(0)
-        }
+.card.card-body:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
 
-        25% {
-            transform: translateY(5px);
-        }
+.abouts h1:hover {
+    text-decoration: overline;
+}
 
-        50% {
-            transform: translateY(-5px);
-        }
 
-        100% {
-            transform: translateY(0px);
-        }
-    }
 
-    .card.card-body:hover {
-        transform: scale(1.1);
-        transition: all .2s ease-in-out;
-    }
+/*-----------contacto----------*/
 
-    .abouts h1:hover {
-        text-decoration: overline;
-    }
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+}
 
+/* Style the submit button with a specific background color etc */
+input[type=enviar] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=enviar]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contacto {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 50px;
+}
