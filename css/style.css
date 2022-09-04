@@ -37,6 +37,9 @@ body {
   border-radius: 150px;
   overflow: hidden; }
 
+h5 {
+  color: black; }
+
 .carousel-inner > .carousel-item > img {
   margin: auto;
   width: 40% !important;
@@ -47,24 +50,24 @@ body {
   background-color: #9298E5; }
 
 .lead {
-  color: white; }
+  color: black; }
 
 .comunication label {
   display: inline-block;
-  color: white; }
+  color: black; }
 
 .comunication textarea {
   resize: vertical;
   margin-bottom: 170px; }
 
 .comunication p {
-  color: white; }
+  color: black; }
 
 .comunication h5 {
-  color: white; }
+  color: black; }
 
 .text-primary {
-  color: white; }
+  color: black; }
 
 .text-center {
   color: #9298E5;
@@ -72,18 +75,18 @@ body {
   font-style: italic; }
 
 .abouts h1 {
-  color: white;
+  color: black;
   font-family: 'Bebas Neue', cursive;
   font-style: italic;
   padding: 20px; }
 
 .abouts h2 {
-  color: white;
+  color: black;
   font-family: 'Bebas Neue', cursive;
   font-style: italic; }
 
 .infoceliaca h2 {
-  color: white;
+  color: black;
   font-family: 'Bebas Neue', cursive;
   font-style: italic;
   padding: 25px; }
@@ -91,7 +94,7 @@ body {
 .infoceliaca p {
   margin: 20px;
   font-style: italic;
-  color: white; }
+  color: black; }
 
 .infoceliaca img {
   margin: auto;
@@ -102,14 +105,14 @@ body {
   border-radius: 100px; }
 
 main {
-  background-image: url(../img/bakery.jpg);
+  background-image: url(../img/wall.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   border-color: antiquewhite; }
 
 .known h2 {
-  color: white;
+  color: black;
   font-family: 'Bebas Neue', cursive;
   font-style: italic;
   display: flex;
@@ -119,21 +122,21 @@ main {
 .known p {
   margin: 20px;
   font-style: italic;
-  color: white; }
+  color: black; }
 
 .chefs h3 {
-  color: white; }
+  color: black; }
 
 .map h2 {
-  color: white;
+  color: black;
   font-family: 'Bebas Neue', cursive;
   font-style: italic;
   padding: 25px; }
 
 .map p {
   margin: 20px;
-  font-style: italic;
-  color: white; }
+  font-style: bold;
+  color: black; }
 
 .map iframe {
   margin: auto;
@@ -144,14 +147,14 @@ main {
   border-radius: 10px; }
 
 .requerimentos h2 {
-  color: white;
+  color: black;
   font-family: 'Bebas Neue', cursive;
   font-style: italic;
   padding: 25px;
   margin: auto; }
 
 .requerimentos ul li {
-  color: white; }
+  color: black; }
 
 /*-------------------------------------------------------footers--------------------------------------*/
 .insta a img {

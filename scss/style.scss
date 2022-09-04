@@ -28,7 +28,7 @@ body {
 .carousel .carousel-control {
     border-radius: 150px;
     overflow: hidden;
-}
+} h5{ color: black;}
 
 .carousel-inner>.carousel-item>img {
     margin: auto;
@@ -43,13 +43,13 @@ body {
 }
 
 .lead {
-    color: white;
+    color: black;
 }
 
 .comunication {
     label {
         display: inline-block;
-        color: white;
+        color: black;
     }
 
     textarea {
@@ -58,18 +58,18 @@ body {
     }
 
     p {
-        color: white;
+        color: black;
     }
 
     h5 {
-        color: white;
+        color: black;
     }
 }
 
 
 
 .text-primary {
-    color: white;
+    color: black;
 }
 
 .text-center {
@@ -80,7 +80,7 @@ body {
 
 .abouts {
     h1 {
-        color: white;
+        color: black;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
         @extend %flex;
@@ -88,7 +88,7 @@ body {
     }
 
     h2 {
-        color: white;
+        color: black;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
         @extend %flex;
@@ -98,7 +98,7 @@ body {
 
 .infoceliaca {
     h2 {
-        color: white;
+        color: black;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
         @extend %flex;
@@ -109,7 +109,7 @@ body {
         margin: 20px;
         font-style: italic;
         @extend %flex;
-        color: white;
+        color: black;
     }
 
     img {
@@ -126,7 +126,7 @@ body {
 
 main {
 
-    background-image: url(../img/bakery.jpg);
+    background-image: url(../img/wall.jpg);
     background-size: map-get($main, b-size);
     background-position: map-get($main, b-position);
     background-attachment: map-get($main, b-gattach);
@@ -135,7 +135,7 @@ main {
 
 .known {
     h2 {
-        color: white;
+        color: black;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
         display: flex;
@@ -147,17 +147,17 @@ main {
         margin: 20px;
         font-style: italic;
         @extend %flex;
-        color: white;
+        color: black;
     }
 }
 
 .chefs h3 {
-    color: white;
+    color: black;
 }
 
 .map {
     h2 {
-        color: white;
+        color: black;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
         @extend %flex;
@@ -166,9 +166,9 @@ main {
 
     p {
         margin: 20px;
-        font-style: italic;
+        font-style: bold;
         @extend %flex;
-        color: white;
+        color: black;
     }
 
     iframe {
@@ -184,7 +184,7 @@ main {
 
 .requerimentos {
     h2 {
-        color: white;
+        color: black;
         font-family: 'Bebas Neue', cursive;
         font-style: italic;
         @extend %flex;
@@ -194,7 +194,7 @@ main {
     }
 
     ul li {
-        color: white;
+        color: black;
         @extend %flex;
     }
 }
